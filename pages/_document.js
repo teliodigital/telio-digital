@@ -12,7 +12,7 @@ class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
                         rel="stylesheet"
                     ></link>
-
+                    <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
                 </Head>
                 <body>
                 <Main/>

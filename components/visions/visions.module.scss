@@ -1,0 +1,54 @@
+@import "styles/colors.scss";
+
+.visions {
+
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+
+  &__box {
+
+    margin: 50px 0;
+    min-height: 500px;
+    padding: 40px;
+    border-radius: 2px;
+    background-color: $primary_background_second;
+    box-shadow: 0 0 10px rgba(96, 31, 4, 0.2);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(96, 31, 4, 0.2);
+      background-color: $primary_second;
+
+      svg {
+        fill: $primary_background_second;
+        margin: unset;
+      }
+    }
+
+    svg {
+
+      width: 40px;
+      height: 40px;
+      display: block;
+      fill: $primary_second;
+      margin: 20px 0 50px 0;
+      transition: all 0.3s ease;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 50px 0 20px 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+}

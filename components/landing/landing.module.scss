@@ -1,0 +1,28 @@
+@import "styles/colors.scss";
+
+.landing {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  width: 80%;
+  gap: 100px;
+  margin: auto;
+
+  span {
+    color: $primary_second;
+  }
+
+  &__content {
+    
+    button {
+      margin: 20px 0;
+    }
+
+    h1 {
+      font-size: 9rem;
+      font-weight: 700;
+      color: $primary_font;
+      margin-bottom: 20px;
+    }
+  }
+}

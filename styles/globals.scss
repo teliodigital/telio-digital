@@ -1,3 +1,4 @@
+@import "./colors.scss";
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -15,17 +16,18 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  box-sizing: border-box;
   font: inherit;
   vertical-align: baseline;
+  color: $primary_font;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
   line-height: 1;
+  background-color: $primary_background;
 }
 ol, ul {
   list-style: none;
@@ -40,4 +42,28 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+.main__button {
+    background-color: $primary_second;
+    color: $primary_font;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    &:hover {
+        background-color: $primary_font;
+        color: $primary_second;
+    }
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background-color: $primary_second;
+    margin: 20px 0;
+  border-radius: 5px;
 }
