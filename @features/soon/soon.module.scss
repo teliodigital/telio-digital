@@ -6,6 +6,10 @@
   min-height: 70px;
   background-color: $primary_second;
   
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
   &__content {
     width: 80%;
     margin: 0 auto;

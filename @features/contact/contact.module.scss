@@ -1,0 +1,104 @@
+@import "../../styles/colors";
+
+.contact {
+
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 80%;
+  gap: 50px;
+  margin: auto;
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-column-gap: 20px;
+
+    max-width: 800px;
+
+    .form__layout {
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $primary_font;
+
+        display: block;
+        margin: 20px 0;
+      }
+
+      input {
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: none;
+        background-color: $primary_background;
+        color: $primary_font;
+        border: 1px solid $primary_font;
+        
+        width: calc(100% - 40px);
+      }
+      
+      select {
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: none;
+        background-color: $primary_background;
+        color: $primary_font;
+        border: 1px solid $primary_font;
+
+        width: 100%;
+      }
+
+      textarea {
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: none;
+        background-color: $primary_background;
+        color: $primary_font;
+        border: 1px solid $primary_font;
+        
+        resize: vertical;
+        width: calc(100% - 40px);
+        
+        min-height: 85px;
+      }
+    }
+  }
+
+  &__content {
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $primary_font;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $primary_font;
+
+      margin: 20px 0;
+    }
+  }
+}
